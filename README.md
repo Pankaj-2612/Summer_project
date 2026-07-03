@@ -263,7 +263,7 @@ git push origin feature-name
 
 # 👨‍💻 Author
 
-### Pankaj Swami
+### Pankaj
 
 🔗 GitHub: https://github.com/Pankaj-2612
 
@@ -279,7 +279,7 @@ If you found this project useful, consider giving it a **Star ⭐** on GitHub.
 
 This project is created for educational and learning purposes.
 
-© 2026 Pankaj Swami
+© 2026 Pankaj 
 
 ---
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Sustainable Web Design</title>
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Sustainable Web Design</div>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="practices.html">Best Practices</a>
+      <a href="features.html">Features</a>
+      <a href="dashboard.html">Dashboard</a>
+      
+    </div>
+
+    <button id="themeBtn">Dark Mode</button>
+  </div>
+
+  <div class="container">
+    <h1>Website Sustainability Dashboard</h1>
+
+    <p>
+      A sustainable website should not only look good, but also load quickly,
+      use fewer resources, and reduce unnecessary data transfer. This dashboard
+      shows the type of information a website owner can check to understand how
+      eco-friendly and performance-friendly their website is.
+    </p>
+
+    <div class="info-box">
+      <h2>What This Dashboard Shows</h2>
+      <p>
+        The values below are sample data for this project. In a real website,
+        these details can be collected using performance testing tools and carbon
+        estimation tools.
+      </p>
+
+      <ul>
+        <li><strong>Total Page Size:</strong> Shows how much data the page downloads.</li>
+        <li><strong>HTTP Requests:</strong> Shows how many files the browser loads.</li>
+        <li><strong>Load Time:</strong> Shows how quickly the page opens for users.</li>
+        <li><strong>CO2 Emission:</strong> Shows estimated carbon impact for a page view.</li>
+      </ul>
+    </div>
+
+    <div class="metrics">
+      <div class="metric-card">
+        <h2>Total Page Size</h2>
+        <p id="totalSize">--</p>
+        <span>Smaller pages load faster and use less data.</span>
+      </div>
+
+      <div class="metric-card">
+        <h2>HTTP Requests</h2>
+        <p id="requests">--</p>
+        <span>Fewer requests can improve speed.</span>
+      </div>
+
+      <div class="metric-card">
+        <h2>Load Time</h2>
+        <p id="loadTime">--</p>
+        <span>Fast loading improves user experience.</span>
+      </div>
+
+      <div class="metric-card">
+        <h2>CO2 Emission</h2>
+        <p id="co2">--</p>
+        <span>Estimated carbon for one page view.</span>
+      </div>
+    </div>
+
+    <div class="dashboard-layout">
+      <div class="chart-box">
+        <h2>Page Weight Breakdown</h2>
+        <p>
+          This chart shows which resource types usually add the most weight to a page.
+          Images are often the largest part of a webpage, so optimization is important.
+        </p>
+
+        <svg class="chart" viewBox="0 0 420 260">
+          <line x1="50" y1="30" x2="50" y2="210"></line>
+          <line x1="50" y1="210" x2="390" y2="210"></line>
+
+          <rect id="imageBar" x="80" y="70" width="50" height="140"></rect>
+          <rect id="cssBar" x="160" y="145" width="50" height="65"></rect>
+          <rect id="jsBar" x="240" y="120" width="50" height="90"></rect>
+          <rect id="htmlBar" x="320" y="165" width="50" height="45"></rect>
+
+          <text x="105" y="235">Images</text>
+          <text x="185" y="235">CSS</text>
+          <text x="265" y="235">JS</text>
+          <text x="345" y="235">HTML</text>
+        </svg>
+      </div>
+
+      <div class="card score-card">
+        <h2>Eco Score</h2>
+        <div class="score-circle">
+          <span id="ecoScore">--</span>
+        </div>
+        <p id="scoreMessage">Loading score...</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Image Weight</h2>
+        <p id="imageWeight">--</p>
+        <span>Use WebP or AVIF and compress large images.</span>
+      </div>
+
+      <div class="card">
+        <h2>CSS Weight</h2>
+        <p id="cssWeight">--</p>
+        <span>Remove unused styles and keep CSS simple.</span>
+      </div>
+
+      <div class="card">
+        <h2>JavaScript Weight</h2>
+        <p id="jsWeight">--</p>
+        <span>Use only the JavaScript needed for the page.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 Sustainable Web Design</p>
+  </div>
+
+</body>
+</html>
